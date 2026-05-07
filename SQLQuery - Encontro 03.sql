@@ -1,3 +1,5 @@
+USE RicBank;
+
 -- Encontro 03
 
 -- Tabela temporaria
@@ -48,7 +50,7 @@ INSERT INTO #Conta (Id, IdCliente, IdAgencia, Numero, Tipo, Saldo, Situacao, Dat
             Situacao, 
             DataAbertura, 
             (SELECT AVG(Saldo) AS Media
-                FROM dbo.Conta as co2 -- WITH(NOLOCK) perguntar se precisa.
+                FROM dbo.Conta as co2 WITH(NOLOCK)
                 WHERE co2.IdAgencia = co1.IdAgencia
                 GROUP BY co2.IdAgencia)
         FROM dbo.Conta as co1 WITH(NOLOCK);
@@ -74,7 +76,8 @@ SELECT  co.Id,
         co.Saldo,
         co.SaldoMedioAgencia
     FROM #Conta as co
-    WHERE co.Saldo > co.SaldoMedioAgencia;
+    WHERE co.Saldo > co.SaldoMedioAgencia
+    ORDER BY co.Saldo DESC;
 
 SELECT  co.Id,
         co.IdAgencia,
