@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apostila do Aluno - SMN</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; background: #eef3f5; color: #20333c; }
+.page { max-width: 950px; margin: 24px auto; background: white; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+.hero { background: linear-gradient(135deg, #233b45 0%, #2e4a55 100%); color: white; padding: 40px 48px; }
+.hero img { width: 120px; border-radius: 18px; display:block; margin-bottom: 20px; }
+.hero h1 { margin: 0; color: #08e46a; font-size: 34px; }
+.hero p { margin: 10px 0 0 0; color: #dbe4ea; font-size: 17px; }
+.content { padding: 36px 48px 48px 48px; line-height: 1.65; }
+h2 { color: #233b45; border-left: 6px solid #08e46a; padding-left: 12px; margin-top: 36px; }
+h3 { color: #2e4a55; margin-top: 24px; }
+table { width: 100%; border-collapse: collapse; margin-top: 14px; }
+th, td { border: 1px solid #d9e2e7; padding: 12px; text-align: left; vertical-align: top; }
+th { background: #233b45; color: white; }
+pre { background: #182b33; color: #f5f7fa; padding: 16px; border-radius: 12px; overflow-x: auto; }
+.footer { background:#233b45; color:#dbe4ea; padding:16px 48px; font-size: 13px; }
+.badge { display:inline-block; background:#08e46a; color:#16313a; font-weight:700; padding:6px 10px; border-radius:999px; margin-top:10px; }
+li { margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="hero">
+    <img src="data:image/jpeg;base64,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" alt="Logo SMN">
+    <h1>Apostila do Aluno</h1>
+    <p>Construindo Ric Bank • Curso rápido de SQL Server com foco em prática, procedures, functions e jobs.</p>
+    <div class="badge">SMN Tecnologia</div>
+  </div>
+  <div class="content">
+<h2>Apresentação do curso</h2>
+<p>O curso <strong>Construindo Ric Bank</strong> foi estruturado para estagiários com noções básicas de SQL e distribuído em 12 encontros de 90 minutos. A proposta prioriza prática, resolução de exercícios e contato com cenários próximos da realidade de sistemas bancários.</p>
+<p>Durante a trilha, os participantes vão construir e manipular um banco fictício chamado <strong>Ric Bank</strong>, aplicando comandos básicos, consultas intermediárias, recursos de programação em SQL Server e automação com jobs.</p>
+
+<h2>Objetivos de aprendizagem</h2>
+<ul>
+<li>Entender a estrutura de um banco relacional aplicado a um cenário bancário.</li>
+<li>Revisar comandos essenciais como SELECT, INSERT, UPDATE e DELETE.</li>
+<li>Utilizar JOINs para combinar dados de tabelas relacionadas.</li>
+<li>Resolver consultas com subselects.</li>
+<li>Compreender e criar CTEs simples e recursivas.</li>
+<li>Aprender o conceito, os benefícios e a construção de stored procedures.</li>
+<li>Compreender os principais tipos de functions no SQL Server.</li>
+<li>Criar e interpretar jobs por interface e por T-SQL.</li>
+<li>Resolver desafios práticos com lógica de negócio bancária.</li>
+</ul>
+
+<h2>Modelo de negócio do Ric Bank</h2>
+<p>O banco Ric Bank simula operações comuns de uma instituição financeira. O ambiente inclui cadastro de clientes, gerenciamento de contas, emissão de cartões, controle de transações, empréstimos e auditoria de operações.</p>
+<table>
+<tr><th>Entidade</th><th>Função no curso</th></tr>
+<tr><td>Cliente</td><td>Representa o titular dos produtos bancários.</td></tr>
+<tr><td>Agencia</td><td>Representa a unidade de relacionamento.</td></tr>
+<tr><td>Conta</td><td>Centraliza saldo, tipo e status da conta.</td></tr>
+<tr><td>Cartao</td><td>Relaciona cliente, conta e produto financeiro.</td></tr>
+<tr><td>Transacao</td><td>Armazena movimentações financeiras.</td></tr>
+<tr><td>Emprestimo</td><td>Permite trabalhar cenários de análise e aprovação.</td></tr>
+<tr><td>AuditoriaOperacao</td><td>Registra atividades importantes para controle e jobs.</td></tr>
+</table>
+
+<h2>Plano dos 12 encontros</h2>
+<table>
+<tr><th>Encontro</th><th>Tema</th><th>Prática principal</th></tr>
+<tr><td>1</td><td>Abertura e modelo Ric Bank</td><td>Leitura do modelo e execução do script de criação.</td></tr>
+<tr><td>2</td><td>SELECT e filtros</td><td>Consultas básicas com WHERE, ORDER BY e aliases.</td></tr>
+<tr><td>3</td><td>INSERT, UPDATE e DELETE</td><td>CRUD com atenção a filtros e segurança.</td></tr>
+<tr><td>4</td><td>JOINs</td><td>Relações entre cliente, conta, agência e cartão.</td></tr>
+<tr><td>5</td><td>Subselects</td><td>Consultas com médias, máximos e filtros dependentes.</td></tr>
+<tr><td>6</td><td>CTEs</td><td>CTEs simples e visão introdutória de recursão.</td></tr>
+<tr><td>7</td><td>Stored procedures I</td><td>Procedures com parâmetros e consulta por período.</td></tr>
+<tr><td>8</td><td>Stored procedures II</td><td>Depósito, saque e transferência.</td></tr>
+<tr><td>9</td><td>Functions</td><td>Scalar e table-valued functions.</td></tr>
+<tr><td>10</td><td>Jobs via interface</td><td>Agendamento visual no SQL Server Agent.</td></tr>
+<tr><td>11</td><td>Jobs via T-SQL</td><td>Criação de job por script e execução manual.</td></tr>
+<tr><td>12</td><td>Desafio final</td><td>Entrega gamificada com ranking.</td></tr>
+</table>
+
+<h2>Revisão rápida de comandos básicos</h2>
+<h3>SELECT</h3>
+<p>Utilizado para consultar dados em uma ou mais tabelas. Ao longo do curso, ele será combinado com filtros, ordenação, JOINs, subselects e CTEs.</p>
+<pre><code>SELECT Nome, Cidade, UF
+FROM dbo.Cliente
+WHERE UF = 'PB'
+ORDER BY Nome;</code></pre>
+
+<h3>INSERT</h3>
+<p>Utilizado para inserir novos registros nas tabelas.</p>
+<pre><code>INSERT INTO dbo.Cliente (Nome, CPF, DataNascimento, Cidade, UF)
+VALUES ('Novo Cliente', '99999999999', '2000-01-01', 'Joao Pessoa', 'PB');</code></pre>
+
+<h3>UPDATE</h3>
+<p>Utilizado para atualizar dados existentes. É fundamental validar o filtro antes da execução.</p>
+<pre><code>UPDATE dbo.Cliente
+SET Telefone = '83988887777'
+WHERE ClienteID = 1;</code></pre>
+
+<h3>DELETE</h3>
+<p>Utilizado para excluir registros. Deve ser usado com cautela para evitar remoções indevidas.</p>
+<pre><code>DELETE FROM dbo.Cartao
+WHERE CartaoID = 999;</code></pre>
+
+<h2>JOINs</h2>
+<p>JOINs são essenciais para relacionar dados distribuídos em várias tabelas. No Ric Bank, serão usados para produzir relatórios e consultas operacionais.</p>
+<pre><code>SELECT c.Nome, ct.NumeroConta, a.NomeAgencia
+FROM dbo.Cliente c
+INNER JOIN dbo.Conta ct ON ct.ClienteID = c.ClienteID
+INNER JOIN dbo.Agencia a ON a.AgenciaID = ct.AgenciaID;</code></pre>
+<p>Também serão trabalhados cenários com LEFT JOIN para identificar, por exemplo, clientes sem cartão.</p>
+
+<h2>Subselects</h2>
+<p>Subselects permitem usar o resultado de uma consulta dentro de outra. Eles aparecem em comparações, filtros, cálculos e validações.</p>
+<pre><code>SELECT *
+FROM dbo.Conta
+WHERE Saldo > (SELECT AVG(Saldo) FROM dbo.Conta);</code></pre>
+
+<h2>CTEs</h2>
+<p>CTEs ajudam a organizar consultas complexas e a deixar a leitura mais clara. No curso, serão utilizadas para agrupamentos, classificação por faixas e introdução à recursividade.</p>
+<pre><code>WITH FaixaSaldo AS (
+    SELECT ContaID, NumeroConta, Saldo,
+           CASE
+               WHEN Saldo < 1000 THEN 'Baixo'
+               WHEN Saldo < 5000 THEN 'Medio'
+               ELSE 'Alto'
+           END AS Faixa
+    FROM dbo.Conta
+)
+SELECT *
+FROM FaixaSaldo;</code></pre>
+
+<h2>Stored procedures</h2>
+<p>Stored procedures são blocos reutilizáveis de instruções SQL armazenados no banco de dados. No curso, elas serão tratadas como o principal recurso para encapsular regras de negócio.</p>
+<ul>
+<li>Recebem parâmetros.</li>
+<li>Podem devolver dados e status.</li>
+<li>Permitem reaproveitamento.</li>
+<li>Organizam operações críticas.</li>
+</ul>
+<p>Exemplos no Ric Bank:</p>
+<ul>
+<li>Procedure para listar transações por conta e período.</li>
+<li>Procedure para depósito.</li>
+<li>Procedure para saque com validação de saldo.</li>
+<li>Procedure para transferência com transação.</li>
+</ul>
+<pre><code>CREATE OR ALTER PROCEDURE dbo.usp_Depositar
+    @ContaID INT,
+    @Valor DECIMAL(18,2)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    UPDATE dbo.Conta
+    SET Saldo = Saldo + @Valor
+    WHERE ContaID = @ContaID;
+END;</code></pre>
+
+<h2>Functions</h2>
+<p>Functions serão apresentadas como estruturas reutilizáveis para cálculos e consultas. O curso vai tratar principalmente dois tipos.</p>
+<table>
+<tr><th>Tipo</th><th>Uso no curso</th></tr>
+<tr><td>Scalar function</td><td>Calcular tarifa ou classificação de saldo.</td></tr>
+<tr><td>Table-valued function</td><td>Retornar extrato resumido ou conjunto de dados reutilizável.</td></tr>
+</table>
+<pre><code>CREATE OR ALTER FUNCTION dbo.fn_CalcularTarifa (@Saldo DECIMAL(18,2))
+RETURNS DECIMAL(18,2)
+AS
+BEGIN
+    RETURN CASE WHEN @Saldo >= 5000 THEN 0 ELSE 25 END;
+END;</code></pre>
+
+<h2>Jobs</h2>
+<p>Jobs serão estudados em duas frentes: criação pela interface do SQL Server Agent e criação por script T-SQL. O objetivo é mostrar automação real de tarefas operacionais.</p>
+<ul>
+<li>Execução agendada de procedure de auditoria.</li>
+<li>Rotina para registrar saldos ou operações do dia.</li>
+<li>Disparo manual para testes.</li>
+</ul>
+<pre><code>EXEC dbo.sp_start_job @job_name = N'Job_Auditoria_RicBank';</code></pre>
+
+<h2>Gamificação</h2>
+<p>O curso terá ranking contínuo para estimular participação e entrega.</p>
+<table>
+<tr><th>Ação</th><th>Pontos</th></tr>
+<tr><td>Exercício concluído corretamente</td><td>10</td></tr>
+<tr><td>Primeiro a concluir</td><td>5 bônus</td></tr>
+<tr><td>Resposta oral correta</td><td>3</td></tr>
+<tr><td>Ajudar colega com validação</td><td>2</td></tr>
+<tr><td>Desafio bônus resolvido</td><td>7</td></tr>
+<tr><td>Solução destacada pelo instrutor</td><td>4</td></tr>
+</table>
+
+<h2>Exercícios propostos</h2>
+<ol>
+<li>Consultar clientes de uma UF específica.</li>
+<li>Listar contas com saldo acima de determinado valor.</li>
+<li>Inserir um novo cliente e uma nova conta.</li>
+<li>Atualizar dados cadastrais de cliente.</li>
+<li>Relacionar cliente, conta e agência com JOIN.</li>
+<li>Identificar clientes sem cartão com LEFT JOIN.</li>
+<li>Encontrar contas acima da média com subselect.</li>
+<li>Criar CTE para total de movimentação por conta.</li>
+<li>Criar procedure para extrato por período.</li>
+<li>Criar procedure para depósito.</li>
+<li>Criar procedure para saque.</li>
+<li>Criar procedure para transferência.</li>
+<li>Criar scalar function para tarifa.</li>
+<li>Criar table-valued function para extrato resumido.</li>
+<li>Criar e testar um job de auditoria.</li>
+</ol>
+
+<h2>Boas práticas em laboratório</h2>
+<ul>
+<li>Sempre validar um SELECT antes de executar UPDATE ou DELETE.</li>
+<li>Usar nomes claros para procedures e functions.</li>
+<li>Evitar SELECT * em soluções finais.</li>
+<li>Organizar scripts por bloco funcional.</li>
+<li>Registrar dúvidas e soluções para revisão ao final do encontro.</li>
+</ul>
+
+<h2>Fechamento</h2>
+<p>Ao final do curso, o aluno terá praticado a construção de consultas, rotinas reutilizáveis e automações básicas em SQL Server, sempre dentro de um cenário coerente com operações bancárias. O objetivo não é apenas memorizar comandos, mas aprender a resolver problemas de forma estruturada.</p>
+</div>
+  <div class="footer">Material visual com identidade SMN • Curso Construindo Ric Bank • SQL Server</div>
+</div>
+</body>
+</html>
